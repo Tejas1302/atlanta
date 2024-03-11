@@ -1,5 +1,9 @@
 # import python packages
+<<<<<<< HEAD
 from snowflake.snowpark import Session
+=======
+from snowflake.snowpark import session
+>>>>>>> origin/main
 import pandas as pd
 import requests
 import snowflake.connector
@@ -8,6 +12,7 @@ import streamlit as st
 from snowflake.snowpark.context import get_active_session
 
 def create_session():
+<<<<<<< HEAD
     return Session.builder.configs(st.secrets['snowflake']).create()
 
 session = create_session()
@@ -29,3 +34,11 @@ else:
     st.info("You haven't selected anything")
 
     
+=======
+    return session.builder.configs(st.secrets['snowflake']).create()
+
+session = create_session()
+
+#write directly to the app
+st.title("Welcome to Streamlit in Snwoflake")
+>>>>>>> origin/main
