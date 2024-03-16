@@ -4,3 +4,8 @@ python
 URLError
 streamlit
 requests
+ydata_profiling
+timedelta
+date
+option_menu
+datetime
