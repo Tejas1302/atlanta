@@ -321,9 +321,9 @@ if selected == 'About Us':
     col1,_ = st.columns([2,1])
     with col1:
         st.header("⚡️Team Saama Thunders")
-    #team_caption = f"<p style='font-size:20px;'>The datailed Data Profiling of the selected file available here :</p>"
-    #st.markdown(data_prof_caption, unsafe_allow_html=True)
-    st.text('We are the hackers who build the smart solutions to solve the real world problems')
+    team_caption = f"<p style='font-size:20px;'>We are the hackers who build the smart solutions to solve the real world problems :</p>"
+    st.markdown(team_caption, unsafe_allow_html=True)
+    #st.text('We are the hackers who build the smart solutions to solve the real world problems')
     with st.container(border=True):
 
         col1, col2, col3 = st.columns([1,1,1])
