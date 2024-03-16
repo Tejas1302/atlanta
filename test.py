@@ -70,6 +70,22 @@ if selected == 'Home':
     st.markdown('<p class="big-font">Our solution involves developing a user-friendly Data Management application that can help preview the data available in your cloud storage and evaluate data quality before taking it ahead for further data processing. The solution is built on Modern Data Platform and utilizes the power of Snowflake features such as  Streamlit and Snowpark.</p>', unsafe_allow_html=True)
     st.markdown('<p class="big-font">We have used AWS as the cloud environment from where users can select a file from an S3 bucket. This application also allows users to select specific columns for data profiling and then select and insert one or more rows of data into a Snowflake tables. With a bit of Python programming, we have tried to optimize the Snowflake usage and kept it to a minimum to enable less credit usage.</p>', unsafe_allow_html=True)
 
+if selected == 'About Us':
+    _, col2, _ = st.columns([1, 2, 1])
+    with col2:
+        st.header("⚡️Team Saama Thunder")
+    st.write('')
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image('saama_logo.jpg',width = 100)
+        st.write('Tejas Trivedi')
+    with col2:
+        st.image('saama_logo.jpg',width = 100)
+        st.write('Tejas Trivedi')
+    with col3:
+        st.image('saama_logo.jpg',width = 100)
+        st.write('Tejas Trivedi')
+
 
 if selected == 'Data Browser':
     bottom_menu_1 = st.columns((4,1,1))
