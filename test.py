@@ -321,24 +321,26 @@ if selected == 'About Us':
     col1,_ = st.columns([2,1])
     with col1:
         st.header("⚡️Team Saama Thunders")
-    st.write('')
+    #team_caption = f"<p style='font-size:20px;'>The datailed Data Profiling of the selected file available here :</p>"
+    #st.markdown(data_prof_caption, unsafe_allow_html=True)
+    st.text('We are the hackers who build the smart solutions to solve the real world problems')
     with st.container(border=True):
 
         col1, col2, col3 = st.columns([1,1,1])
         with col1:
-            st.image('unamed.jpg',width = 150)
+            st.image('unnamed.jpg',width = 150)
             st.write('Tejas Trivedi')
             st.text('Statisctical Programmer')
             st.text('8550972858')
             st.text('tejas.trivedi@saama.com')
         with col2:
-            st.image('unamed.JPG',width = 112)
+            st.image('unnamed.jpg',width = 112)
             st.write('Hemchandra Patil')
             st.text('Associate Software Engineer')
             st.text('9373858259')
             st.text('hemchandra.patil@saama.com')
         with col3:
-            st.image('Mahesh_img.jpg',width = 130)
+            st.image('unnamed.jpg',width = 130)
             st.write('Mahesh Wagdale')
             st.text('Senior Software Engineer')
             st.text('9209323426')
