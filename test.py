@@ -21,8 +21,8 @@ st.set_page_config(
 with st.sidebar:
     selected=option_menu(
         menu_title="Main Menu",
-        options=["Home","Data Browser","About Us"],
-        icons=["house","database-add","person-lines-fill"],
+        options=["Home","Data Browser","Data Editor","About Us"],
+        icons=["house","database-add","pencil-square","person-lines-fill"],
         menu_icon="cast",
         default_index=0,
         styles={
@@ -274,7 +274,7 @@ if selected == 'Data Browser':
                         column_config={"Select": st.column_config.CheckboxColumn(required=True)},
                         disabled=dataset.columns,
                     )
-
+                    
                     # Filter the dataframe using the temporary column, then drop the column
                     selected_rows = edited_df[edited_df.Select]
                     return selected_rows.drop('Select', axis=1)
@@ -312,6 +312,10 @@ if selected == 'Data Browser':
                             st.success(f"{count_records} rows has been Loaded Successfully into {table_name}_STG table ")
 #st.session_state.clicked = False 
 
+if selected == 'Data Editor':
+    st.write('Hi')
+
+
 #Below code is use for About Us tab
 if selected == 'About Us':
     col1,_ = st.columns([2,1])
@@ -322,13 +326,13 @@ if selected == 'About Us':
 
         col1, col2, col3 = st.columns([1,1,1])
         with col1:
-            st.image('Tejas_img.jpg',width = 150)
+            st.image('unamed.jpg',width = 150)
             st.write('Tejas Trivedi')
             st.text('Statisctical Programmer')
             st.text('8550972858')
             st.text('tejas.trivedi@saama.com')
         with col2:
-            st.image('Hemchandra_img.JPG',width = 112)
+            st.image('unamed.JPG',width = 112)
             st.write('Hemchandra Patil')
             st.text('Associate Software Engineer')
             st.text('9373858259')
