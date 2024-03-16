@@ -1,6 +1,5 @@
 snowflake
 pandas
-URLError
 streamlit
 requests
 ydata_profiling
